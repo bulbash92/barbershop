@@ -1,0 +1,31 @@
+.cosmetics {
+    width: 390px;
+
+    
+}
+
+.mens-class {
+    font-weight: 24px;
+    line-height: 44px;
+}
+
+.good-cosmetics {
+    list-style: none;
+}
+.service-price {
+    width: 460px;
+}
+
+.services-table {
+    width: 460px;
+    height: 125px;
+    margin-bottom: 50px;
+
+    border-collapse:collapse;
+    border: 2px solid #000000;
+}
+
+
+td {
+    border: 2px solid #000000;
+}
