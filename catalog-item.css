@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+  
+.product-photos {
+    width: 460px;
+
+}
+
+.product-foto-preview {
+    list-style: none;
+}
+
+.product-foto-preview li {
+    box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+}
+
+.product-foto-full {
+    box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+}
+
+.product-article {
+    color: #aeaeae;
+
+    text-align: right;
+}
+
+.product-price b {
+    line-height: 14px;
+
+    background-color: #e5e5e5;
+}
+
+.product-info {
+    width: 390px;
+}
+
+.product-info h3 {
+    font-weight: 30px;
+    line-height: 24px;
+}
+
+.composition {
+    list-style: none;
+}
