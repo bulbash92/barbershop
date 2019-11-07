@@ -1,6 +1,6 @@
 .inner-page {
     color: #000000;
-    
+
     background-color: #f8f5f2;
     background-image: url("img/pattern-light.jpg");
     background-position: 0 0;
@@ -26,22 +26,20 @@
     margin-top: 65px;
 }
 
+.catalog-header-logo {
+    margin-top: 25px;
+}
+
 .main-navigation {
     align-items: flex-start;
     flex-direction: row;
-
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 60px;
-
     background-color: #000000;
 }
 
-
-
-}
-
 .page-title {
-    margin:0;
+    margin: 0;
     margin-bottom: 15px;
     padding: 0;
 
@@ -50,13 +48,14 @@
 }
 
 
-.breadcrumbs  {
+.breadcrumbs {
+    display: flex;
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
 
     list-style: none;
-   
+
 }
 
 .breadcrumbs a {
@@ -69,20 +68,21 @@
 }
 
 .breadcrumbs-current {
+    margin-right: 38px;
     color: #aba9a7;
- }
+}
 
- .catalog-columns {
-     display: flex;
-     justify-content: space-between;
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
 
- }
+}
 
- .filter {
-     width: 180px;
- }
+.filter {
+    width: 180px;
+}
 
- .filter fieldset {
+.filter fieldset {
     border: none;
 }
 
@@ -98,12 +98,12 @@
     line-height: 18px;
 }
 
-.filter-inpute:hover + label,
-.filter-inpute:focus + label {
-    color:#663d15;
+.filter-inpute:hover+label,
+.filter-inpute:focus+label {
+    color: #663d15;
 }
 
-.filter-inpute:disabled +label {
+.filter-inpute:disabled+label {
     color: #000000;
 
     opacity: 0.5;
@@ -120,7 +120,7 @@
     padding: 0;
     margin: o;
     margin-bottom: 25px;
-    
+
     list-style: none;
 }
 
@@ -189,7 +189,7 @@
 
 .pagination-item-current a {
     color: #000000;
-    
+
     background-color: #ffffff;
 }
 
