@@ -349,19 +349,23 @@ img {
     list-style: none;
 }
 
-.social-button {
-    color: #ffffff;
-}
+
 
 .footer-copyright {
+    display: flex;
+    flex-direction: column;
     width: 150px;
     margin: 0;
     margin-left: auto;
 }
 
+.footer-copyright .button {
+    margin: 0;
+    
+}
+
 .footer-copyright b {
-    display: inline-block;
-    margin-bottom: 20px;
+       margin-bottom: 12px;
 }
 
 .footer-copyright .button:hover,
@@ -424,12 +428,15 @@ img {
 }
 
 .social-button {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     width: 43px;
     height: 43px;
     margin-top: 20px;
     margin-right: 5px;
+    padding: 5px;
 }
 
 .social-button:hover,
@@ -438,28 +445,11 @@ img {
     background-color: #ffffff;
 }
 
-.social-button svg:hover {
-    color: #000000;
-}
-
 .footer-social b {
     margin-left: 15px;
 }
 
-.vk {
-    background-image: url(img/vk.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.fb {
-    background-image: url(img/facebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.insta {
-    background-image: url(img/instagram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.social-button svg:hover #vkontakte {
+    fill: #111;
+ 
 }
