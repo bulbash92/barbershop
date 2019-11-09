@@ -103,29 +103,34 @@
                     СБ-ВС: с 10:00 до 19:00
                 </p>
                 <a class="button contacts-button" href="map.html">Как проехать</a>
-                <a class="button contacts- button" href="cotntacts.html">Обратная связь</a>
+                <a class="button contacts-button" href="cotntacts.html">Обратная связь</a>
             </section>
             <section class="appointment">
                 <h2>Записаться</h2>
                 <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p class="appointment-item">
-                        <label for="appointment-data">Дата</label>
-                        <input id="appointment-data" type="text" name="date" value="" placeholder="03.08.2019">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-time">Время</label>
-                        <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-name">Ваше имя</label>
-                        <input id="appointment-name" type="text" name="name" value="" placeholder="Арменоид">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-phone">Телефон</label>
-                        <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+375 29 2222222">
-                    </p>
-                    <button class="button" type="submit">Отправить</button>
+                    <div class="form-wrapper">
+                        <p class="appointment-item">
+                            <label for="appointment-data">Дата</label>
+                            <input id="appointment-data" type="text" name="date" value="" placeholder="03.08.2019">
+                        </p>
+                        <p class="appointment-item">
+                            <label for="appointment-time">Время</label>
+                            <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                        </p>
+                    </div>
+                    <div class="form-wrapper">
+                        <p class="appointment-item">
+                            <label for="appointment-name">Ваше имя</label>
+                            <input id="appointment-name" type="text" name="name" value="" placeholder="Иван">
+                        </p>
+                        <p class="appointment-item">
+                            <label for="appointment-phone">Телефон</label>
+                            <input id="appointment-phone" type="tel" name="phone" value=""
+                                placeholder="+375 29 2222222">
+                        </p>
+                    </div>
+                    <button class="button button-submit" type="submit">Отправить</button>
                 </form>
             </section>
         </div>
@@ -140,15 +145,17 @@
             </p>
             <div class="footer-social">
                 <b>Давайте дружить!</b>
-                <a class="social-button" href="#">Вконтакте</a>
-                <a class="social-button" href="#">Фейсбук</a>
-                <a class="social-button" href="#">Инстаграмм></a>
+                <div class="wrapper-social">
+                    <a class="social-button vk" href="https://vk.com/"></a>
+                    <a class="social-button fb" href="#"></a>
+                    <a class="social-button insta" href="#"></a>
+                </div>
             </div>
-            <p class="footer-copyright">
-                <b>Разработано</b>
-                <a class="button" href="https:/htmlacademy.ru">HTML ACADEMY</a>
-            </p>
-        </div>
+                <p class="footer-copyright">
+                    <b>Разработано:</b><br>
+                    <a class="button" href="https:/htmlacademy.ru">HTML ACADEMY</a>
+                </p>
+            </div>
     </footer>
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>

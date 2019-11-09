@@ -62,13 +62,19 @@ img {
 }
 
 .gallery-button {
-    padding: 16px 52px;
+    padding: 12px 52px;
     margin-top: 36px;
     margin-right: 20px;
 }
 
-.gallery-next{
-    padding: 16px 50px;
+.gallery-next {
+    padding: 12px 50px;
+}
+
+.contacts-button {
+    display: inline-block;
+    margin-top: 27px;
+    margin-right: 20px;
 }
 
 .main-header {
@@ -192,7 +198,7 @@ img {
 }
 
 .features-item {
-    width: 300px;
+    width: 290px;
 
     text-align: center;
 }
@@ -268,16 +274,34 @@ img {
     margin: 0;
 }
 
+.appointment-item {
+    margin: 0;
+}
+
+.appointment-item label {
+    display: inline-block;
+    margin-left: 17px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 .appointment-item input {
     font: inherit;
-
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 14px;
     background-color: transparent;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
 }
 
 .appointment-item input:focus {
     border-color: #663d15;
     outline: none;
+}
+
+.button-submit {
+    margin-top: 20px;
+    width: 330px;
 }
 
 .main-footer {
@@ -332,8 +356,11 @@ img {
     width: 150px;
     margin: 0;
     margin-left: auto;
+}
 
-
+.footer-copyright b {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .footer-copyright .button:hover,
@@ -384,4 +411,55 @@ img {
 .restore:hover,
 .restore:focus {
     text-decoration: none;
+}
+
+.form-wrapper {
+    display: flex;
+}
+
+#appointment-data {
+    margin-right: 20px;
+}
+
+#appointment-name {
+    margin-right: 20px;
+}
+
+.wrapper-social {
+    display: flex;
+}
+
+.social-button {
+    display: inline-block;
+    background-color: black;
+    width: 43px;
+    height: 43px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.footer-social b {
+    margin-left: 15px;
+}
+
+.vk {
+    background-image: url(img/vk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fb {
+    background-image: url(img/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.insta {
+    background-image: url(img/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-button {
+   
 }
