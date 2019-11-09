@@ -8,16 +8,10 @@ body {
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-
-    
-}
-
-.wrapper {
     background-color: #000000;
     background-image: url("img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-
 }
 
 .visually-hidden {
@@ -313,7 +307,7 @@ img {
 
 .main-footer {
     padding: 60px 0;
-    margin-top: 65px;
+    margin-top: 30px;
 
 
     color: #ffffff;
@@ -469,4 +463,3 @@ img {
     background-repeat: no-repeat;
     background-position: center;
 }
-
