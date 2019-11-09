@@ -9,10 +9,15 @@ body {
     color: #ffffff;
     text-transform: uppercase;
 
+    
+}
+
+.wrapper {
     background-color: #000000;
     background-image: url("img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+
 }
 
 .visually-hidden {
@@ -212,7 +217,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 50px 80px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 
     color: #000000;
 
@@ -275,7 +280,9 @@ img {
 }
 
 .appointment-item {
-    margin: 0;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
 }
 
 .appointment-item label {
@@ -301,7 +308,7 @@ img {
 
 .button-submit {
     margin-top: 20px;
-    width: 330px;
+    width: 100%;
 }
 
 .main-footer {
@@ -364,7 +371,7 @@ img {
 }
 
 .footer-copyright .button:hover,
-.footer-copyright button:focus {
+.footer-copyright .button:focus {
     color: #000000;
 
     background-color: #ffffff;
@@ -415,14 +422,7 @@ img {
 
 .form-wrapper {
     display: flex;
-}
-
-#appointment-data {
-    margin-right: 20px;
-}
-
-#appointment-name {
-    margin-right: 20px;
+    justify-content: space-between;
 }
 
 .wrapper-social {
@@ -436,6 +436,16 @@ img {
     height: 43px;
     margin-top: 20px;
     margin-right: 5px;
+}
+
+.social-button:hover,
+.social-button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.social-button svg:hover {
+    color: #000000;
 }
 
 .footer-social b {
@@ -460,6 +470,3 @@ img {
     background-position: center;
 }
 
-.footer-button {
-   
-}
