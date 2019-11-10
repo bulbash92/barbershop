@@ -51,29 +51,31 @@ img {
 
     background-color: #000000;
     border: none;
-    padding: 16px 34px;
-    margin-top: 36px;
+    padding: 10px 30px;
+    margin-right: 16px;
+
+
 }
 
 .button:hover,
 .button:focus {
     background-color: #664d15;
+    cursor: pointer;
 }
 
-.gallery-button {
-    padding: 12px 52px;
-    margin-top: 36px;
-    margin-right: 20px;
-}
 
-.gallery-next {
-    padding: 12px 50px;
+
+.button .disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
 }
 
 .contacts-button {
     display: inline-block;
     margin-top: 27px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .main-header {
@@ -197,14 +199,31 @@ img {
 }
 
 .features-item {
-    width: 290px;
 
+    width: 290px;
     text-align: center;
 }
 
 .features-item h3 {
+    position: relative;
     font-size: 30px;
     line-height: 42px;
+    margin-bottom: 60px;
+}
+
+.features-item h3::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    bottom: -30px;
+    left: 135px;
+    transform: rotate(45deg);
+}
+
+.features-item p {
+    margin: 0 10px;
 }
 
 .index-columns {
@@ -216,9 +235,10 @@ img {
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url("img/pattern-light.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image: url(img/shadow.png),
+        url("img/pattern-light.jpg");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
 
 }
 
@@ -233,7 +253,41 @@ img {
 }
 
 .gallery {
-    width: 310;
+    width: 300px;
+}
+
+.gallery-container {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery-button {
+    box-sizing: border-box;
+    position: absolute;
+
+    width: 140px;
+    margin: 0;
+    
+    bottom: 0;
+
+}
+
+.gallery-button-back{
+    left: 0;
+}
+
+.gallery-button-next {
+    right: 0;
 }
 
 .contacts {
@@ -264,7 +318,7 @@ img {
 
 .gallery-content {
     width: 286px;
-    height: 176px;
+    height: 164px;
     background-image: url(img/studio.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -361,17 +415,18 @@ img {
 
 .footer-copyright .button {
     margin: 0;
-    
+
 }
 
 .footer-copyright b {
-       margin-bottom: 12px;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
     color: #000000;
-
     background-color: #ffffff;
 }
 
@@ -425,6 +480,7 @@ img {
 
 .wrapper-social {
     display: flex;
+    justify-content: space-between;
 }
 
 .social-button {
@@ -434,9 +490,8 @@ img {
     background-color: black;
     width: 43px;
     height: 43px;
-    margin-top: 20px;
-    margin-right: 5px;
-    padding: 5px;
+    
+
 }
 
 .social-button:hover,
@@ -446,10 +501,14 @@ img {
 }
 
 .footer-social b {
+    display: block;
     margin-left: 15px;
+    margin-bottom: 15px;
+    
 }
 
-.social-button svg:hover #vkontakte {
+.social-button:hover path,
+.social-button:focus path {
     fill: #111;
- 
+
 }
