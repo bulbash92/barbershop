@@ -473,7 +473,7 @@ img {
     text-decoration: none;
 }
 
-.form-wrapper {
+.form-container {
     display: flex;
     justify-content: space-between;
 }

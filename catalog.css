@@ -49,7 +49,9 @@
 
 
 .breadcrumbs {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
@@ -60,7 +62,9 @@
 
 .breadcrumbs a {
     color: #000000;
+
 }
+
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
@@ -68,8 +72,21 @@
 }
 
 .breadcrumbs-current {
+    position: relative;
     margin-right: 38px;
     color: #aba9a7;
+}
+
+
+.breadcrumbs a::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    right: -25px;
+    top: 7px;
 }
 
 .catalog-columns {
