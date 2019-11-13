@@ -431,21 +431,77 @@ img {
 }
 
 .modal {
+    display: none;
+    position: fixed;
     color: #000000;
 
     background-color: #f8f3f0;
     background-image: url("img/pattern-light.jpg");
     background-position: 0 0;
     background-repeat: repeat;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-login {
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+    width: 300px;
+    padding: 50px 80px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: '';
+    position: absolute;
+
+    width: 19px;
+    height: 3px;
+    background-color: #d0d0d0;
+    left: 1px;
+    top: 10px;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
 }
 
 .modal h2 {
+    margin: 0;
+    margin-bottom: 30px;
+
     font-size: 30px;
     line-height: 42px;
+   
+}
+
+.login-form p {
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px 15px;
+    padding-right: 40px;
     font: inherit;
     color: #000000;
     text-transform: uppercase;
@@ -454,13 +510,75 @@ img {
     border: 2px solid #000000;
 }
 
-.login-form input:focus {
+.login-icon-user {
+    background-image: url(img/user.svg);
+    background-repeat: no-repeat;
+    background-position: 270px center;
+}
+
+.login-icon-password {
+    background-image: url(img/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 270px center;
+}
+
+.login-form .login-help {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    
+}
+
+.login-checkbox {
+    position: relative;
+    margin-left: 30px; 
+    cursor: pointer;
+}
+
+.login-form input:focus, {
     border-color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + 
+.checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + 
+.checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type="checkbox"]
+:checked + .checkbox-indicator::before ,
+.login-checkbox input[type="checkbox"]
+:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 8px;
+
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.login-form .button {
+    width: 100%;
+    margin-right: 0;
 }
 
 .login-checkbox:hover,
 .login-checkbox:focus {
     color: #663d15;
+    cursor: pointer;
 }
 
 .restore {
@@ -512,3 +630,4 @@ img {
     fill: #111;
 
 }
+
