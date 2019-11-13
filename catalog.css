@@ -81,8 +81,8 @@
 .breadcrumbs a::after {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #000000;
     transform: rotate(45deg);
     right: -25px;
