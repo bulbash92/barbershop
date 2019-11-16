@@ -95,6 +95,51 @@
 
 }
 
+.filter-option {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+
+}
+
+.filter-checkbox input[type="checkbox"]+.checkbox-indicator {
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+}
+
+.filter-checkbox input[type="checkbox"]:focus+.checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
+.filter-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0px;
+
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+
+}
+
+
+.filter-checkbox input[type="checkbox"]+.checkbox-indicator::before {
+    transform: rotate(-45deg);
+}
+
+.filter-checkbox input[type="checkbox"]+.checkbox-indicator::after {
+    transform: rotate(45deg);
+}
+
 .filter {
     width: 180px;
 }
@@ -110,9 +155,42 @@
 }
 
 
-.filter ul {
+.filter-list {
     list-style: none;
-    line-height: 18px;
+}
+
+.filter-list-radio {
+    list-style: none;
+}
+
+.filter-radio input[type="radio"]+.radio-indicator {
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+.filter-radio input[type="radio"]:focus+.radio-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    border-radius: 50%;
+}
+
+.filter-radio input[type="radio"]:checked +.radio-indicator::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    background-color: #000000;
+    border-radius: 50%;
+
+}
 }
 
 .filter-inpute:hover+label,
@@ -141,6 +219,11 @@
     list-style: none;
 }
 
+.catalog-item-image {
+    width: 220px;
+    height: 165px;
+    margin: 0;
+}
 
 .catalog-item {
     width: 220px;
@@ -167,17 +250,37 @@
 .catalog-item h3 {
     font-size: 14px;
     line-height: 18px;
+    margin: 15px;
 }
 
 .catalog-category {
     text-transform: none;
 }
 
+.catalog-item-price {
+    display: flex;
+    margin: 0;
+    margin: 14px;
+}
+
+.button-price {
+    text-align: center;
+    width: 64px;
+    margin: 0;
+    padding: 10px 12px;
+    background: black;
+    color: white;
+}
+
 .catalog-item-price b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 43px;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-
     background-color: #e5e5e5;
 }
 
@@ -187,6 +290,7 @@
 }
 
 .pagination-list {
+    display: flex;
     padding: 0;
     margin: 0;
 
@@ -194,8 +298,15 @@
 }
 
 .pagination-item a {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
     background-color: #000000;
+
+    margin-right: 8px;
 }
 
 .pagination-item a:hover,
