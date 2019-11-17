@@ -7,10 +7,10 @@ var form = popup.querySelector("form");
 var storage = localStorage.getItem("login");
 
 
-form.addEventListener("submit", function(evt){
+form.addEventListener("submit", function (evt) {
     if (!login.value || !password.value) {
-    evt.preventDefault();
-    popup.classList.add("modal-error");
+        evt.preventDefault();
+        popup.classList.add("modal-error");
     } else {
         localStorage.setItem("login", login.value);
     }
@@ -20,7 +20,7 @@ form.addEventListener("submit", function(evt){
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-   
+
     if (storage) {
         login.value = storage;
         password.focus();
@@ -36,9 +36,9 @@ close.addEventListener("click", function (evt) {
     popup.classList.remove("modal-error")
 });
 
-window.addEventListener("keydown", function(evt){
-    if(evt.keyCode === 27) {
-        if (popup.classList.contains("modal-show")){
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        if (popup.classList.contains("modal-show")) {
             popup.classList.remove("modal-show");
             popup.classList.remove("modal-error")
         }
