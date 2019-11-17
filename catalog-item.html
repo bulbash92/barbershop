@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="catalog-item.css">
     <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="price.css">
     <link href="normalize.css" rel="stylesheet">
 </head>
 
@@ -38,8 +39,6 @@
         </div>
     </header>
     <main class="container">
-
-
         <h1 class="page-title">Набор для путешествий "Baxter of california"</h1>
         <ul class="breadcrumbs">
             <li class="breadcrumbs-current"><a href="index.html">Главная</a></li>
@@ -63,8 +62,10 @@
 
             <section class="product-info">
                 <h2 class="visually-hidden">Описание товара</h2>
-                <p class="product-avialabity">Есть в наличии</p>
-                <p class="product-article">Артикул: dexter-ae</p>
+                <div class="article-container">
+                    <p class="product-avialabity">Есть в наличии</p>
+                    <p class="product-article">Артикул: dexter-ae</p>
+                </div>
                 <p class="product-text">Travel kit- Необходимый аксессуар во время любого путешествия.
                     В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей
                     поездки
@@ -73,15 +74,14 @@
                     может
                     стать отличным подарком.</p>
                 <p class="product-price">
-                    <b>2900Р</b>
-                    <a class="button" href="#">Купить</a>
+                    <b class="price">2900Р</b>
+                    <a class="button button-price" href="#">Купить</a>
                 </p>
                 <h3>В набор входят:</h3>
-                <ul class="composition">
-
-                    <li>Средство для умывания</li>
-                    <li>Увлажняющй крем</li>
-                    <li>крем для бритья</li>
+                <ul class="custom-list-1">
+                    <li>Средство для умывания(50мл)</li>
+                    <li>Увлажняющй крем(50мл)</li>
+                    <li>крем для бритья(50мл)</li>
                     <li>Крем после бритья, шампунь(50 мл)</li>
                     <li>Удобная кожаная косметичка</li>
                 </ul>
@@ -155,7 +155,7 @@
         </P>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

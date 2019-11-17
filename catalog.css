@@ -272,7 +272,7 @@
     color: white;
 }
 
-.catalog-item-price b {
+.price  {
     display: flex;
     justify-content: center;
     align-items: center;
