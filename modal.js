@@ -1,11 +1,11 @@
-var link = document.querySelector(".login-link");
-var popup = document.querySelector(".modal-login");
-var close = document.querySelector(".modal-close");
-var login = popup.querySelector("[name=login]");
-var password = popup.querySelector("[name=password]");
-var form = popup.querySelector("form");
-var storage = localStorage.getItem("login");
-
+let link = document.querySelector(".login-link");
+let popup = document.querySelector(".modal-login");
+let close = popup.querySelector(".modal-close");
+let login = popup.querySelector("[name=login]");
+let password = popup.querySelector("[name=password]");
+let form = popup.querySelector("form");
+let storage = localStorage.getItem("login");
+ 
 
 form.addEventListener("submit", function (evt) {
     if (!login.value || !password.value) {
@@ -15,7 +15,6 @@ form.addEventListener("submit", function (evt) {
         localStorage.setItem("login", login.value);
     }
 });
-
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -28,7 +27,6 @@ link.addEventListener("click", function (evt) {
         login.focus();
     }
 });
-
 
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -43,5 +41,5 @@ window.addEventListener("keydown", function (evt) {
             popup.classList.remove("modal-error")
         }
     }
-})
+});
 

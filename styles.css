@@ -512,10 +512,25 @@ img {
     border: 7px solid white;
 }
 
+.modal-map iframe {
+    width: 766px;
+    height: 564px;
+    border : 2px solid  black;
+    z-index: 2;
+   
+}
+
+.modal-map img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    
+}
+
 .modal-map p {
     margin: 0;
 }
-
 
 .modal-close {
     position: absolute;
