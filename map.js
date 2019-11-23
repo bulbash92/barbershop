@@ -1,12 +1,22 @@
-let mapLink = document.querySelector(".contacts-button-map");
+let mapLinks = document.querySelectorAll(".contacts-button-map");
 let mapPopup = document.querySelector(".modal-map");
 let mapClose = mapPopup.querySelector(".modal-close");
 
-mapLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("modal-show");
-
+mapLinks.forEach(function (link) {
+    link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+    
+    });
 });
+
+for (let i=0; i<mapLinks.length; i++) {
+    let link = mapLinks[i];
+    link.addEventListener("click", function(evt){
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+    });
+};
 
 mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
